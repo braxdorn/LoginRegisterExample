@@ -13,7 +13,7 @@ public class UserService {
 	@Autowired
 	UserDAO uDAO;
  
-	public boolean addProduct(User u) {
+	public boolean addUser(User u) {
 		uDAO.addUser(u);
 		return true;
 	}
