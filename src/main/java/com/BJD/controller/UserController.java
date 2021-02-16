@@ -12,10 +12,19 @@ public class UserController {
 	@Autowired
 	UserService us;
 	
-	@PostMapping(value="/addUser")
+	@PostMapping(value="/adduser")
 	public String addUser(User user) {
 		us.addUser(user);
 		
 		return "redirect:/index.jsp";
 	}
+	
+	@PostMapping(value="/checkuser")
+	public String checkUser(String un, String pw) {
+		if (us.checkUser(un, pw)) { return "redirect:/success.jsp"; }
+		
+		return "redirect:/success.jsp";
+	}
+	
+	
 }

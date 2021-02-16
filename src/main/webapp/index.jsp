@@ -11,12 +11,12 @@
   
   <div>
     <c:url value="register" var="register" />
-    <h2><a href="${add_form}">Register</a></h2>
+    <h2><a href="register.jsp">Register</a></h2>
     
     <br />
 
     <c:url value="login" var="login" />
-    <h2><a href="${show_products}">Login</a></h2>
+    <h2><a href="login.jsp">Login</a></h2>
   </div>
 
 </body>
